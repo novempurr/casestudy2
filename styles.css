@@ -1,0 +1,73 @@
+.html {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.page-content {
+  background-color: rgb(253, 243, 243);
+}
+.page-content .other-content {
+  border-top: 1px solid rgb(153, 152, 152);
+}
+
+.page-sidebar {
+  background-color: rgb(253, 243, 243);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(189, 69, 139);
+}
+
+.card {
+  background-color: transparent;
+  border: 0 solid transparent;
+}
+.card .card-header {
+  background-color: transparent;
+  border: 0 solid transparent;
+}
+.card .card-footer {
+  background-color: transparent;
+  border: 0 solid transparent;
+}
+
+.navbar h1 {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.thumb-sm {
+  width: 55px;
+}
+
+.badge {
+  background-color: rgb(245, 175, 216);
+}
+
+.badge:hover {
+  background-color: azure;
+}
+
+.page-header-mini {
+  height: 250px;
+  background-color: rgb(253, 243, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-header-mini .title {
+  font-weight: bold;
+}
+.page-header-mini .breadcrumb {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=styles.css.map */

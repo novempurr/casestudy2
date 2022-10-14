@@ -1,0 +1,93 @@
+$fontstack: 'Gotu', sans-serif;
+$titlefont: 'Cinzel Decorative', cursive;
+$link-color-hover: rgb(189, 69, 139);
+$background-color: rgb(253, 243, 243);
+$alternate-background-color: rgb(245, 175, 216);
+
+@mixin card-format {
+    background-color: transparent;
+    border: 0 solid transparent;
+}
+
+@mixin border-top {
+    border-top: 1px solid rgb(153, 152, 152);
+}
+
+.html {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.page-content {
+    background-color: $background-color;
+
+    .other-content {
+        @include border-top();
+    }
+}
+
+.page-sidebar {
+    background-color: $background-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    color: $link-color-hover;
+}
+
+.card {
+   @include card-format;
+
+    .card-header {
+        @include card-format;
+    }
+
+    .card-footer {
+        @include card-format;
+}
+}
+
+.navbar {
+    h1 {
+        font-family: $titlefont;
+    }
+}
+
+.thumb-sm {
+	width: 55px;
+}
+
+.badge {
+    background-color: $alternate-background-color;
+}
+
+.badge:hover {
+    background-color: azure;
+}
+
+.page-header-mini {
+    height: 250px;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-weight: bold;
+    }
+
+    .breadcrumb {
+        list-style-type: none;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+
+    }
+}
